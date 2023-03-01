@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Journaly"),
+          title: Text("stay Healthy"),
           centerTitle: true,
           backgroundColor: Colors.green,
         ),
