@@ -20,6 +20,7 @@ class MainApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Container(width: 100,height: 100,child: Image.asset("images/sdau.png")),
               Text('Hello World!'),
               Text('Welcome back'),
               Container(
