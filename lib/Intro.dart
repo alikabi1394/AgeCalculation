@@ -15,7 +15,7 @@ class Intro extends StatelessWidget {
             height: 100,
             child: Image.asset("images/sdau.png")),
         Text('Hello World!'),
-        Text('Welcome back'),
+        Text('Welcome'),
       ],
     );
   }
