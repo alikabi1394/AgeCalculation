@@ -15,7 +15,7 @@ class CreateAccount extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('----'),
-            Text('Continue with'),
+            Text('Continue with ...'),
             Text('----'),
           ],
         ),
