@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'CreateAccount.dart';
 import 'Login.dart';
 import 'Intro.dart';
+import 'counter.dart';
+
 void main() {
   runApp(const MainApp());
 }
@@ -19,17 +21,16 @@ class MainApp extends StatelessWidget {
           backgroundColor: Colors.green,
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Intro(),
-              Login(),
-              CreateAccount()
-            ],
-          ),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Intro(),
+            Login(),
+            CreateAccount(),
+            MyCounter(),
+          ]),
         ),
         backgroundColor: Color.fromARGB(255, 197, 251, 200),
       ),
     );
   }
 }
+
