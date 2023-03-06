@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'CreateAccount.dart';
-import 'Login.dart';
-import 'Intro.dart';
-import 'counter.dart';
+import 'intro.dart';
+import 'login.dart';
+import 'createAccount.dart';
+import 'Counter.dart';
+import 'MyDrawer.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,21 +17,19 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("stay Healthy"),
+          title: Text("افكار"),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 167, 214, 56),
         ),
+        drawer: MyDrawer(),
         body: Center(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Intro(),
-            Login(),
-            CreateAccount(),
-            MyCounter(),
-          ]),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Intro(), Login(), CreateAccount(), MyCounter()],
+          ),
         ),
         backgroundColor: Color.fromARGB(255, 197, 251, 200),
       ),
     );
   }
 }
-
