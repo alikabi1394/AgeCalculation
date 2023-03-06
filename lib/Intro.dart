@@ -10,10 +10,12 @@ class Intro extends StatelessWidget {
     return Column(
       children: [
         Container(
-            width: 150, height: 150, child: Image.asset('images/sdau.png')),
-        Text('Hello World!'),
-        Text('Welcome back'),
-        Text('Welcome back'),
+            width: 100,
+            height: 100,
+            child: Image.asset("images/sdau.png")),
+        Text(' Hello World ', style: TextStyle(fontStyle: FontStyle.italic)),
+        Text('Welcome', style: TextStyle(fontWeight: FontWeight.bold)),
+
       ],
     );
   }
