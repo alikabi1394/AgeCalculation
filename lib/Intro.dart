@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Intro extends StatelessWidget {
@@ -11,11 +10,10 @@ class Intro extends StatelessWidget {
     return Column(
       children: [
         Container(
-            width: 100,
-            height: 100,
-            child: Image.asset("images/sdau.png")),
+            width: 150, height: 150, child: Image.asset('images/sdau.png')),
         Text('Hello World!'),
-        Text('Welcome'),
+        Text('Welcome back'),
+        Text('Welcome back'),
       ],
     );
   }

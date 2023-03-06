@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'Home.dart';
 
 class Login extends StatefulWidget {
+  final String? hint;
   const Login({
     super.key,
+    this.hint,
   });
 
   @override
@@ -14,12 +17,22 @@ class _LoginState extends State<Login> {
   String username = "";
   String password = "";
 
-  checkUsernamePassword() {
+  void goHomeScreen() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Home(),
+        ));
+  }
+
+  void checkUsernamePassword() {
     setState(() {
       if (username == "" || password == "") {
         correctEntry = false;
       } else {
         correctEntry = true;
+        goHomeScreen();
+        //.. الانتقال
       }
     });
   }
@@ -35,7 +48,7 @@ class _LoginState extends State<Login> {
           color: correctEntry ? Colors.white : Colors.red,
           child: TextField(
             onChanged: (value) => {username = value},
-            decoration: InputDecoration(hintText: "Username"),
+            decoration: InputDecoration(hintText: widget.hint),
           ),
         ),
         Container(

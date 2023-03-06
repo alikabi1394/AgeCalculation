@@ -10,19 +10,29 @@ class MyCounter extends StatefulWidget {
 class _MyCounterState extends State<MyCounter> {
   int number = 0;
   void incressNumber() {
-   setState(() {
-    number++;
-});
+    setState(() {
+      number++;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton(
             onPressed: incressNumber,
-            child: Icon(Icons.plus_one)),
-        Text("totel iteme: $number")
+            child: Container(
+              width: 200,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("add"),
+                  Icon(Icons.plus_one),
+                ],
+              ),
+            )),
+        Text("totel items: $number")
       ],
     );
   }

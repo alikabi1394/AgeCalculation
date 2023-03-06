@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class CreateAccount extends StatelessWidget {
   const CreateAccount({
     super.key,
@@ -13,9 +11,9 @@ class CreateAccount extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: const [
             Text('----'),
-            Text(' ...اكمال تسجيل الدخول من خلال  '),
+            Text('Continue with'),
             Text('----'),
           ],
         ),
@@ -23,22 +21,28 @@ class CreateAccount extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
               onPressed: () => {print("Sign in")},
-              child: Text('Google'),
+              child: Container(
+                  width: 20,
+                  height: 20,
+                  child: Image.asset('images/google.png')),
             ),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.grey),
               onPressed: () => {print("Sign in")},
-              child: Text('Apple'),
+              child: Container(
+                  width: 20,
+                  height: 20,
+                  child: Image.asset('images/apple.png')),
             ),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               onPressed: () => {print("Sign in")},
-              child: Text('FaceBook'),
+              child: Container(
+                  width: 20,
+                  height: 20,
+                  child: Image.asset('images/facebook.png')),
             ),
           ],
         ),
