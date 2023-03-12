@@ -11,12 +11,16 @@ class Search extends StatelessWidget {
         appBar: AppBar(
           title: Text("Search"),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 76, 163, 175),
         ),
-        drawer: MyDrawer(),
-        body: Center(
-          child: Placeholder(),
-        ),
+         drawer: MyDrawer(),
+        body: Text("تحديد المواقع",
+            style: TextStyle(fontSize: 30, color: Colors.green[600], shadows: [
+              Shadow(
+                  color: Colors.red,
+                  blurRadius: 3.0,
+                  offset: Offset(10.0, 10.0))
+            ])),
       ),
     );
   }

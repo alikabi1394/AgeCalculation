@@ -11,11 +11,12 @@ class MyProfile extends StatelessWidget {
         appBar: AppBar(
           title: Text("MyProfile"),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 207, 175, 87),
         ),
         drawer: MyDrawer(),
         body: Center(
           child: Placeholder(),
+          
         ),
       ),
     );

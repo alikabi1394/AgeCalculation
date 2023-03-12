@@ -57,6 +57,8 @@ class _LoginState extends State<Login> {
           margin: EdgeInsets.all(10),
           color: correctEntry ? Colors.white : Colors.red,
           child: TextField(
+            // من اليمين لليسار
+            textAlign: TextAlign.right,
             onChanged: (value) => {password = value},
             decoration: InputDecoration(hintText: 'Password'),
           ),

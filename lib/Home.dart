@@ -10,9 +10,9 @@ class Home extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Journaly"),
+          title: Text("أفكار"),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 226, 228, 126),
         ),
         drawer: MyDrawer(),
         body: Center(

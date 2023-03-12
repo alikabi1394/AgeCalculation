@@ -8,7 +8,6 @@ class MyDrawer extends StatelessWidget {
     super.key,
   });
 
-
   void openHomeScreen(BuildContext context) {
     Navigator.push(
         context,
@@ -41,20 +40,21 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             onTap: () => openHomeScreen(context),
             leading: Icon(Icons.home),
-            title: Text("Home"),
-            subtitle: Text("this is the Home page"),
+            //Home
+            title: Text("الرئيسية"),
+            subtitle: Text("الانتقال الى الصفحة الرئيسية"),
           ),
           ListTile(
             onTap: () => openProfileScreen(context),
             leading: Icon(Icons.person),
-            title: Text("Profile"),
-            subtitle: Text("this is your Profile page"),
+            title: Text("صحتناء"),
+            subtitle: Text("معرفة الوزن المثالي"),
           ),
           ListTile(
             onTap: () => openSearchScreen(context),
             leading: Icon(Icons.search),
-            title: Text("Search"),
-            subtitle: Text("this is the Search page"),
+            title: Text("تحديد الموقع"),
+            subtitle: Text("تحديد موقعك الحالي"),
           ),
         ],
       ),
