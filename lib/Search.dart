@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'MyDrawer.dart';
 
-class Search extends StatelessWidget {
+class Search extends StatefulWidget {
   const Search({super.key});
+
+  @override
+  State<Search> createState() => _SearchState();
+}
+
+class _SearchState extends State<Search> {
+  DateTime date = DateTime.now();
+  //DataTable date = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +22,37 @@ class Search extends StatelessWidget {
           backgroundColor: Color.fromARGB(255, 76, 163, 175),
         ),
          drawer: MyDrawer(),
-        body: Text("تحديد المواقع",
-            style: TextStyle(fontSize: 30, color: Colors.green[600], shadows: [
-              Shadow(
-                  color: Colors.red,
-                  blurRadius: 3.0,
-                  offset: Offset(10.0, 10.0))
-            ])),
-      ),
-    );
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                '${date.day}/${date.month}/${date.year}',
+                 style: const TextStyle(fontSize: 30),
+                ),
+                 const SizedBox(height: 10,),
+                 ElevatedButton(
+                  child: const Text("اخترالتاريخ" , style: 
+                  TextStyle(fontSize: 20)),
+                  onPressed: () async {
+                    DateTime? newDate = await showDatePicker(
+                      context: context,
+                      initialDate: date,
+                      firstDate: DateTime(2000),
+                      lastDate: DateTime(2100),
+                    );
+                    if (newDate == null) return;
+                    setState(() {
+                      date = newDate;
+                    });
+                  },
+                 ),
+               ],
+             ),
+            ),
+        )
+      );
   }
 }
+
+

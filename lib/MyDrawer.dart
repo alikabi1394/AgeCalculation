@@ -53,8 +53,9 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             onTap: () => openSearchScreen(context),
             leading: Icon(Icons.search),
-            title: Text("تحديد الموقع"),
-            subtitle: Text("تحديد موقعك الحالي"),
+            title: Text("اختيار التاريخ "),
+            subtitle: Text("قائمة تختار منها التاريخ المراد ادراجة في الحقل"),
+            
           ),
         ],
       ),
