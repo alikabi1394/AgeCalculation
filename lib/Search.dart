@@ -47,11 +47,23 @@ class _SearchState extends State<Search> {
                     });
                   },
                  ),
+                 
+                 Padding(
+                   padding: const EdgeInsets.all(8.0),
+                   child: Text("${DateTime.now().year - date.year}",
+                    style: const TextStyle(fontSize: 30),),
+                 )
+                 
                ],
+               
+               
              ),
             ),
+            
         )
+        
       );
+      
   }
 }
 

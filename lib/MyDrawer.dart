@@ -47,8 +47,8 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             onTap: () => openProfileScreen(context),
             leading: Icon(Icons.person),
-            title: Text("صحتناء"),
-            subtitle: Text("معرفة الوزن المثالي"),
+            title: Text("اختيار الوقت"),
+            subtitle: Text("قائمة تختار منها الوقت المراد ادراجة في الحقل"),
           ),
           ListTile(
             onTap: () => openSearchScreen(context),
