@@ -54,7 +54,7 @@ class MyDrawer extends StatelessWidget {
             onTap: () => openSearchScreen(context),
             leading: Icon(Icons.search),
             title: Text("اختيار التاريخ "),
-            subtitle: Text("قائمة تختار منها التاريخ المراد ادراجة في الحقل"),
+            subtitle: Text("مع  قائمة تختار منها التاريخ المراد ادراجة في الحقل مع تحديد العمر الحالي"),
             
           ),
         ],

@@ -10,14 +10,13 @@ class Search extends StatefulWidget {
 
 class _SearchState extends State<Search> {
   DateTime date = DateTime.now();
-  //DataTable date = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Search"),
+          title: Text("حساب العمر"),
           centerTitle: true,
           backgroundColor: Color.fromARGB(255, 76, 163, 175),
         ),
@@ -38,7 +37,7 @@ class _SearchState extends State<Search> {
                     DateTime? newDate = await showDatePicker(
                       context: context,
                       initialDate: date,
-                      firstDate: DateTime(2000),
+                      firstDate: DateTime(1950),
                       lastDate: DateTime(2100),
                     );
                     if (newDate == null) return;
@@ -47,23 +46,16 @@ class _SearchState extends State<Search> {
                     });
                   },
                  ),
-                 
                  Padding(
                    padding: const EdgeInsets.all(8.0),
-                   child: Text("${DateTime.now().year - date.year}",
+                   child: Text("العمر الحالي ${DateTime.now().year - date.year}",
                     style: const TextStyle(fontSize: 30),),
                  )
-                 
                ],
-               
-               
              ),
             ),
-            
         )
-        
       );
-      
   }
 }
 
