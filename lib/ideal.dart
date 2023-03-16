@@ -10,7 +10,7 @@ class Ideal extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(home: Scaffold(
         appBar: AppBar(
-          title: Text("حساب العمر"),
+          title: Text("الوزن المثالي"),
           centerTitle: true,
           backgroundColor: Color.fromARGB(255, 240, 179, 47),
         ),
