@@ -42,23 +42,30 @@ class MyDrawer extends StatelessWidget {
             leading: Icon(Icons.home),
             //Home
             title: Text("الرئيسية"),
-            subtitle: Text("الانتقال الى الصفحة الرئيسية"),
+            //subtitle: Text("الانتقال الى الصفحة الرئيسية"),
           ),
           ListTile(
             onTap: () => openProfileScreen(context),
-            leading: Icon(Icons.person),
+            leading: Icon(Icons.access_time),
             title: Text("اختيار الوقت"),
-            subtitle: Text("قائمة تختار منها الوقت المراد ادراجة في الحقل"),
+            //subtitle: Text("قائمة تختار منها الوقت المراد ادراجة في الحقل"),
           ),
           ListTile(
             onTap: () => openSearchScreen(context),
-            leading: Icon(Icons.search),
-            title: Text("اختيار التاريخ "),
-            subtitle: Text("مع  قائمة تختار منها التاريخ المراد ادراجة في الحقل مع تحديد العمر الحالي"),
-            
+            leading: Icon(Icons.add_task),
+            title: Text("حساب العمر الحالي "),
+            //subtitle: Text("مع  قائمة تختار منها التاريخ المراد ادراجة في الحقل مع تحديد العمر الحالي"),
+          ),
+          ListTile(
+            onTap: () => idealScreen(context),
+            leading: Icon(Icons.auto_fix_high),
+            title: Text("الوزن المثالي "),
+            //subtitle: Text("مع  قائمة تختار منها التاريخ المراد ادراجة في الحقل مع تحديد العمر الحالي"),
           ),
         ],
       ),
     );
   }
+  
+  idealScreen(BuildContext context) {}
 }

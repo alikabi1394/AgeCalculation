@@ -43,31 +43,36 @@ class _LoginState extends State<Login> {
       children: [
         Container(
           height: 30,
-          width: 100,
+          width: 200,
           margin: EdgeInsets.all(10),
           color: correctEntry ? Colors.white : Colors.red,
           child: TextField(
+            textAlign: TextAlign.center,
             onChanged: (value) => {username = value},
-            decoration: InputDecoration(hintText: widget.hint),
+            decoration: InputDecoration(hintText: 'ادخل اسم المستخدم'),
           ),
         ),
         Container(
           height: 30,
-          width: 100,
+          width: 200,
           margin: EdgeInsets.all(10),
           color: correctEntry ? Colors.white : Colors.red,
           child: TextField(
+            obscureText: true,
             // من اليمين لليسار
-            textAlign: TextAlign.right,
+            //textAlign: TextAlign.right,
+            // في الوسط
+             textAlign: TextAlign.center,
             onChanged: (value) => {password = value},
-            decoration: InputDecoration(hintText: 'Password'),
+            decoration: InputDecoration(hintText: 'ادخل كلمة المرور'),
           ),
         ),
-        Text('Reset password'),
+        //Text('Reset password'),
+        SizedBox(height: 10,),
         ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
             onPressed: checkUsernamePassword,
-            child: Text("Sign in"))
+            child: Text("تسجيل الدخول"))
       ],
     );
   }

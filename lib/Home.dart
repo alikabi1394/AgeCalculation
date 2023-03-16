@@ -8,9 +8,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //حذف كلمة DEBUG
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("أفكار"),
+          title: Text("صحتنا حياتنا"),
           centerTitle: true,
           backgroundColor: Color.fromARGB(255, 226, 228, 126),
         ),

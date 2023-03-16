@@ -13,12 +13,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //حذف كلمة DEBUG
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("افكار"),
-          centerTitle: true,
-          backgroundColor: Color.fromARGB(255, 167, 214, 56),
-        ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

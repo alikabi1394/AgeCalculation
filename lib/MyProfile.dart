@@ -14,6 +14,8 @@ TimeOfDay time = TimeOfDay(hour: 07, minute: 30);
 
   Widget build(BuildContext context) {
     return MaterialApp(
+      //حذف كلمة DEBUG
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("تحديد الوقت"),

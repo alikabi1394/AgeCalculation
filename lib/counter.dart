@@ -20,19 +20,22 @@ class _MyCounterState extends State<MyCounter> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ElevatedButton(
-            onPressed: incressNumber,
-            child: Container(
-              width: 200,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("add"),
-                  Icon(Icons.plus_one),
-                ],
-              ),
-            )),
-        Text("totel items: $number")
+        Container(
+            width: 200, height: 200, child: Image.asset("images/saha.png")),
+
+        //ElevatedButton(
+        //onPressed: incressNumber,
+        // child: Container(
+        //   width: 200,
+        //   child: Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //      Text("add"),
+        //      Icon(Icons.plus_one),
+        //     ],
+        //   ),
+        //  )),
+        // Text("totel items: $number")
       ],
     );
   }
