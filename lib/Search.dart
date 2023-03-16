@@ -18,7 +18,7 @@ class _SearchState extends State<Search> {
         appBar: AppBar(
           title: Text("حساب العمر"),
           centerTitle: true,
-          backgroundColor: Color.fromARGB(255, 76, 163, 175),
+          backgroundColor: Color.fromARGB(255, 240, 179, 47),
         ),
          drawer: MyDrawer(),
         body: Center(
