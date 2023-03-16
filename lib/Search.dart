@@ -14,6 +14,8 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //حذف كلمة DEBUG
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("حساب العمر"),
