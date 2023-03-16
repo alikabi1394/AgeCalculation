@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'Home.dart';
 import 'MyProfile.dart';
 import 'Search.dart';
+import 'ideal.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({
@@ -29,6 +30,14 @@ class MyDrawer extends StatelessWidget {
         context,
         MaterialPageRoute(
           builder: (context) => Search(),
+        ));
+  }
+
+void idealScreen(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Ideal(),
         ));
   }
 
@@ -67,5 +76,5 @@ class MyDrawer extends StatelessWidget {
     );
   }
   
-  idealScreen(BuildContext context) {}
+  
 }
